@@ -1,1 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu's Portfolio</title>
+    <!-- Use a modern, bold font (like Inter or Nunito) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Progress Bar (currently at 0) -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
+    <!-- Header Section -->
+    <header class="navbar rise-in-1">
+        <div class="container">
+            <div class="logo">&lt;Himanshu Kumbhaj /&gt;</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#about" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero container">
+            <div class="hero-left">
+                <div class="hello rise-in-2">HELLO, I'M</div>
+                <!-- <h1 class="headline rise-in-3">
+                    Turning Python Code into <span class="highlight">Production-Ready</span>,<br>
+                    APIs
+                </h1> -->
+                <h1 class="headline rise-in-3">
+                    Turning Python into<br>
+                    <span class="highlight">Production-Ready APIs</span>
+                </h1>
+                <!-- <p class="sub-headline rise-in-4">Cybersecurity Enthusiast</p> -->
+                 <p class="sub-headline rise-in-4">
+                <span id="typewriter"></span><span class="cursor"></span>
+                </p>
+                <p class="bio rise-in-5">
+                I build backend systems using Python, Django, and Flask — designing efficient APIs, scalable architectures, and clean, maintainable code. I care about performance and security equally, bringing a security-conscious mindset from hands-on work with OWASP Top 10 vulnerabilities and real-world penetration testing labs.
+
+                </p>
+                <div class="cta-buttons rise-in-6">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa fa-code"></i> View Projects
+                    </a>
+                    <a href="Himanshu_Full_Stack_Developer.pdf" class="btn btn-secondary">
+                        <i class="fa fa-download"></i> Download Resume
+                    </a>
+                    <a href="https://wa.me/918871571003" class="btn btn-tertiary" target="_blank">
+                        <i class="fa fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="code-card-container rise-in-7">
+                    <div class="code-card floating">
+                        <pre>
+<code>
+<span class="code-comment">&lt;code&gt;</span>
+<span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+  <span class="code-keyword">constructor</span>() {
+    <span class="code-this">this</span>.<span class="code-property">passion</span> = <span class="code-string">'building'</span>;
+    <span class="code-this">this</span>.<span class="code-property">stack</span> = [<span class="code-string">'Python'</span>, <span class="code-string">'Django'</span>, <span class="code-string">'Flask'</span>];
+    <span class="code-this">this</span>.<span class="code-property">focus</span> = <span class="code-string">'scalable APIs'</span>;
+  }
+  <span class="code-keyword">build</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">'production-ready systems'</span>;
+  }
+}
+<span class="code-comment">&lt;/code&gt;</span>
+</code>
+                        </pre>
+                    </div>
+                </div>
+                <!-- <div class="scroll-hint rise-in-8">
+                    <div class="scroll-text">SCROLL</div>
+                    <div class="mouse-icon">
+                        <div class="mouse-wheel"></div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- About Section -->
+        <section id="about" class="about-section container">
+            <div class="section-header scroll-anim">
+                <span class="section-subtitle">ABOUT ME</span>
+                <h2 class="section-title">Building Modern Web Application with <span class="highlight">Python</span></h2>
+            </div>
+
+            <div class="about-content">
+                <!-- Left: Terminal Window -->
+                <div class="about-left scroll-anim delay-1">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre>
+<code>
+<span class="comment"># about.py</span>
+
+<span class="keyword">class</span> <span class="class-name">SoftwareEngineer</span>:
+    <span class="keyword">def</span> <span class="method">__init__</span>(<span class="argument">self</span>):
+        <span class="argument">self</span>.name = <span class="string">"Developer"</span>
+        <span class="argument">self</span>.specialty = <span class="string">"Backend Engineering"</span>
+        <span class="argument">self</span>.stack = [<span class="string">"Python"</span>, <span class="string">"Django"</span>, <span class="string">"Flask"</span>, <span class="string">"FastAPI"</span>]
+        <span class="argument">self</span>.interests = [<span class="string">"Cybersecurity"</span>, <span class="string">"System Design"</span>]
+
+    <span class="keyword">def</span> <span class="method">build_things</span>(<span class="argument">self</span>):
+        <span class="keyword">while</span> <span class="keyword">True</span>:
+            <span class="argument">self</span>.<span class="method">learn</span>()
+            <span class="argument">self</span>.<span class="method">build</span>()
+            <span class="argument">self</span>.<span class="method">improve</span>()
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text & Grid -->
+                <div class="about-right">
+                    <p class="about-description scroll-anim delay-2">
+                        I'm a Python Full Stack Developer with a passion for building modern, scalable, and user-friendly web applications. I enjoy transforming ideas into real-world products using Python, Django, Flask, JavaScript, HTML, CSS, and SQL.
+                        <br>
+                        I focus on writing clean, maintainable code, developing efficient backend systems, and creating responsive user interfaces. Every project is an opportunity to learn something new and improve as a developer.
+                    </p>
+
+                    <div class="features-grid">
+                        <!-- Card 1 -->
+                        <div class="feature-card scroll-anim delay-3">
+                            <div class="feature-icon"><i class="fa-solid fa-table-columns"></i></div>
+                            <div class="feature-info">
+                                <h3>Backend Development</h3>
+                                <p>Building robust server-side systems with Python</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="feature-card scroll-anim delay-4">
+                            <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="feature-info">
+                                <h3>Django & Flask</h3>
+                                <p>Expert in Python web frameworks</p>
+                            </div>
+                        </div>
+                        <!-- Photo Needed -->
+
+
+                        <!-- Card 3 -->
+                        <div class="feature-card scroll-anim delay-5">
+                            <!-- <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div> -->
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div> <!-- icone improvement -->
+                            <div class="feature-info">
+                                <h3>Cybersecurity</h3>
+                                <p>OWASP, network security & vulnerability assessment</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="feature-card scroll-anim delay-6">
+                            <div class="feature-icon"><span style="font-weight: bold; font-family: monospace;">{ }</span></div>
+                            <div class="feature-info">
+                                <h3>Clean Code</h3>
+                                <p>Readable, maintainable, testable code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section container">
+            <div class="section-header scroll-anim">
+                <span class="section-subtitle">SKILLS</span>
+                <h2 class="section-title">Technologies I <span class="highlight">Work With</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Card 1: Programming Languages -->
+                <div class="skill-card scroll-anim delay-1">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> C</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> C++</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Frameworks -->
+                <div class="skill-card scroll-anim delay-2">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-cubes"></i> Django</span>
+                        <span class="skill-tag"><i class="fa-solid fa-flask"></i> Flask</span>
+                        <span class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                        <span class="skill-tag"><i class="fa-solid fa-plug"></i> Django REST</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Frontend -->
+                <div class="skill-card scroll-anim delay-3">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fa-regular fa-window-maximize"></i></div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> jQuery</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Database -->
+                <div class="skill-card scroll-anim delay-4">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-server"></i> SQLite</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fa-solid fa-server"></i> PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: Developer Tools -->
+                <div class="skill-card scroll-anim delay-5">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Developer Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="skill-tag"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+                        <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS EC2</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: Cybersecurity -->
+                <div class="skill-card scroll-anim delay-6">
+                    <div class="skill-card-header">
+                        <!-- <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div> -->
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-shield-virus"></i> OWASP Top 10</span>
+                        <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Network Security</span>
+                        <span class="skill-tag"><i class="fa-solid fa-bug"></i> Vulnerability Assessment</span>
+                        <span class="skill-tag"><i class="fa-solid fa-globe"></i> Web App Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section container">
+            <div class="section-header scroll-anim">
+                <span class="section-subtitle">PROJECTS</span>
+                <h2 class="section-title">Featured <span class="highlight">Work</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 4: ShopMate E-Commerce Platform -->
+<div class="project-card scroll-anim delay-3">
+    <div class="card-top bg-gradient-purple">
+        <div class="card-hero-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <h3 class="project-title">ShopMate - Full-Stack E-Commerce Platform</h3>
+
+        <p class="project-description">
+            A full-stack Django e-commerce platform with complete shopping workflows, featuring user authentication, product management, cart functionality, checkout, order tracking, and admin-based management.
+        </p>
+
+        <div class="project-tags">
+            <span class="tag">Django</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">AJAX</span>
+            <span class="tag">Django ORM</span>
+        </div>
+
+        <div class="project-actions">
+            <a href="https://github.com/hackwithhimanshu/ShopMate-Full-Stack-E-Commerce-Platform" class="btn-action btn-github">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+            <a href="https://project4himanshukumbhaj.pythonanywhere.com/" class="btn-action btn-demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+        </div>
+    </div>
+</div>
+
+                <!-- Project 1:Django To-Do List  -->
+                <div class="project-card scroll-anim delay-3">
+                    <div class="card-top bg-gradient-orange">
+                        <!-- <div class="card-hero-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div> -->
+                        <div class="card-hero-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Django To-Do List Application</h3>
+                        <p class="project-description">
+                            A feature-rich task management web application built with Django, featuring user authentication, personalized task management, categories, search, filtering, sorting, pagination, priority levels, due dates, and a responsive user interface.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Authentication</span>
+                            <span class="tag">CRUD</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/hackwithhimanshu/To-Do-List-Web-App-with-Django" class="btn-action btn-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://project1himanshukumbhaj.pythonanywhere.com/" class="btn-action btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Social Media App -->
+                <div class="project-card scroll-anim delay-1">
+                    <div class="card-top bg-gradient-blue">
+                        <div class="card-hero-icon">
+                            <i class="fa-regular fa-message"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Social Media Web Application</h3>
+                        <p class="project-description">
+                            A full-featured social media platform built with Django, featuring user authentication, role-based access control, user profiles, and real-time interactions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Authentication</span>
+                            <span class="tag">RBAC</span>
+                            <span class="tag">User Profiles</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/hackwithhimanshu/social_media_web_application" class="btn-action btn-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://project2himanshukumbhaj.pythonanywhere.com/" class="btn-action btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Reconnaissance Engine -->
+                <div class="project-card scroll-anim delay-2">
+                    <div class="card-top bg-gradient-green">
+                        <div class="card-hero-icon">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Web Reconnaissance & Exploitation Engine</h3>
+                        <p class="project-description">
+                            An integrated cybersecurity platform built with Flask that automates web reconnaissance, vulnerability scanning, and generates detailed PDF security...
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">PDF Reports</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/hackwithhimanshu/integrated_web_recon_and_exploitation_engine" class="btn-action btn-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://project3himanshukumbhaj.pythonanywhere.com/" class="btn-action btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+<!-- Education Section -->
+        <section id="education" class="education-section container">
+            <div class="section-header scroll-anim">
+                <h2 class="section-title">Academic <span class="highlight">Journey</span></h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item scroll-anim delay-1">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="degree">B.Tech in Computer Science</h3>
+                            <span class="date">2022 — 2026</span>
+                        </div>
+                        <!-- <p class="specialization">IoT & CyberSecurity Specialization</p> -->
+                        <p class="institution">Shri Shankaracharya Technical Campus | Bhilai (C.G)</p>
+                        <span class="badge">7.2 CGPA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section container">
+            <div class="section-header scroll-anim">
+                <span class="section-subtitle">CERTIFICATIONS</span>
+                <h2 class="section-title">Professional <span class="highlight">Credentials</span></h2>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+                <div class="cert-card scroll-anim delay-1">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Python & Django Full Stack Development</h3>
+                        <p>Professional Certification</p>
+                        <!-- <span class="badge">2024</span> -->
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="cert-card scroll-anim delay-2">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Complete Bug Bounty Program</h3>
+                        <p>Cybersecurity Certification</p>
+                        <!-- <span class="badge">2024</span> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <div class="section-header scroll-anim">
+                <span class="section-subtitle">CONTACT</span>
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            </div>
+
+            <div class="contact-content">
+                <!-- Left: Contact Info -->
+                <div class="contact-info-card scroll-anim delay-1">
+                    <h3 class="contact-card-title">Let’s work together</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:himanshukumbhaj0@gmail.com" class="contact-value" target="_blank">himanshukumbhaj0@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/himanshu-kumbhaj-41b274295/" class="contact-value" target="_blank">linkedin.com/in/himanshu-kumbhaj-41b274295/</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/hackwithhimanshu" class="contact-value" target="_blank">github.com/hackwithhimanshu</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Bhilai, Chhattisgarh, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form
+                <div class="contact-form-card scroll-anim delay-2">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="What is this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your message (max 500 characters)" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fa-regular fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div> -->
+                <!-- Right: Contact Form -->
+<div class="contact-form-card scroll-anim delay-2">
+    <form class="contact-form" id="contactForm">
+
+        <!-- Replace YOUR_ACCESS_KEY with the key you get from Web3Forms -->
+        <input type="hidden" name="access_key" value="68bbbd31-bb51-4dd9-a9e0-43d97983207d">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <!-- Notice the added name="name" -->
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <!-- Notice the added name="email" -->
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <!-- Notice the added name="subject" -->
+            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <!-- Notice the added name="message" -->
+            <textarea id="message" name="message" placeholder="Your message (max 500 characters)" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fa-regular fa-paper-plane"></i> <span id="btnText">Send Message</span>
+        </button>
+    </form>
+</div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Footer Section -->
+        <footer class="footer-section scroll-anim">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">&lt;Himanshu Kumbhaj /&gt;</div>
+                    <nav class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#education">Education</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                    <div class="footer-socials">
+                        <a href="https://github.com/hackwithhimanshu" class="social-icon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/himanshu-kumbhaj-41b274295/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <!-- X/Twitter Icon -->
+                        <!-- <a href="#" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a> -->
+                        <a href="https://wa.me/918871571003" class="social-icon" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:himanshukumbhaj0@gmail.com" target="_blank" class="social-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">&copy; 2026 Himanshu Kumbhaj Portfolio | Built with passion.</p>
+                    <a href="#about"><button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Added empty space to make the page scrollable so the progress bar works -->
+        <!-- <div style="height: 200vh;"></div> -->
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
